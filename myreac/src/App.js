@@ -1,14 +1,16 @@
 
+import { useState } from 'react';
 import './App.css'
-import  {Test}  from './components/test';
+import  {Rend}  from './components/rend';
 
 
 
 function App() {
+  const [value0, value1] = useState(false);
   return (
     <div className="App">
-     <h1> potang ina ayaw gumana </h1>
-  <Test />
+<button onClick={() => value1(!value0)}>Labas mo baho mo tanga</button>
+  {value0 && <Rend />}
     </div>
 
     
