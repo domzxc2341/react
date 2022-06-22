@@ -1,21 +1,36 @@
 
-import { useState } from 'react';
-import './App.css'
-import  {Rend}  from './components/rend';
-
+import './sty.scss'
 
 
 function App() {
-  const [value0, value1] = useState(false);
-  return (
-    <div className="App">
-<button onClick={() => value1(!value0)}>Labas mo baho mo tanga</button>
-  {value0 && <Rend />}
-    </div>
 
+  return (
+    <div class="container">
+	
+    <h1>SVG Animated Birds</h1>
+    
+    <div class="bird-container bird-container--one">
+      <div class="bird bird--one"></div>
+    </div>
+    
+    <div class="bird-container bird-container--two">
+      <div class="bird bird--two"></div>
+    </div>
+    
+    <div class="bird-container bird-container--three">
+      <div class="bird bird--three"></div>
+    </div>
+    
+    <div class="bird-container bird-container--four">
+      <div class="bird bird--four"></div>
+    </div>
+    
+  </div>
+  
+  
     
   );
-  
+
 }
 
 export default App;
