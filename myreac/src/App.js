@@ -1,5 +1,5 @@
 
-import './sty.scss'
+import './sty.css'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <div class="container">
 	
-    <h1>SVG Animated Birds</h1>
+    <h1>Karerahan ng Kalapati</h1>
     
     <div class="bird-container bird-container--one">
       <div class="bird bird--one"></div>
