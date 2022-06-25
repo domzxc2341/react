@@ -1,32 +1,28 @@
 
 import './sty.css'
 
+import React,{ useState } from 'react';
+
+
+
+
 
 function App() {
+  const [count, setCount] = useState (0)
 
+  function Decrease(){
+    setCount(count - 1)
+   }
+   function Increase(){
+    setCount(count + 1)
+   }
   return (
-    <div class="container">
-	
-    <h1>Karerahan ng Kalapati</h1>
-    
-    <div class="bird-container bird-container--one">
-      <div class="bird bird--one"></div>
-    </div>
-    
-    <div class="bird-container bird-container--two">
-      <div class="bird bird--two"></div>
-    </div>
-    
-    <div class="bird-container bird-container--three">
-      <div class="bird bird--three"></div>
-    </div>
-    
-    <div class="bird-container bird-container--four">
-      <div class="bird bird--four"></div>
-    </div>
-    
+   
+  <div>
+    <button onClick={Decrease}>-</button>
+    <h1> {count} </h1>
+    <button onClick={Increase}> +</button>
   </div>
-  
   
     
   );
