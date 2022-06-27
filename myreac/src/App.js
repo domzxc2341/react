@@ -1,6 +1,6 @@
 
-import './sty.css'
-import { Navbar } from './components/Navbar';
+
+import Navbar from './components/Navbar';
 /*import React,{ useState } from 'react';
 */
 
