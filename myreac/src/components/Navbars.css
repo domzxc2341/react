@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin&display=swap");
 .navbar {
   width: 100%;
-  background-color: #66c229;
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  -webkit-text-fill-color: #C9BBB8;
+}
+.navbar a {
+  margin: 3vh;
+  font-family: "Anek Latin", sans-serif;
+  font-size: 4vh;
 }/*# sourceMappingURL=Navbars.css.map */

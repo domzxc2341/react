@@ -5,7 +5,7 @@ import './Navbars.css';
   return (
     <div className='navbar'>
       
-    <a href="./home"> Home </a>
+    <a className='navtext' href="./home"> Home </a>
 
 
     </div>
