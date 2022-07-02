@@ -4,6 +4,10 @@ import './Header.css'
 const Headers = () => (
     
     <div className='Head'>
+       <div className='Img'>
+
+
+       </div>
        
         </div>
     

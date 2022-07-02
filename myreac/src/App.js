@@ -1,7 +1,7 @@
 
 
 import Navbar from './components/Navbar';
-import Headers from './components/Headers'
+import Headers from './components/Headers';
 
 import React, { Fragment } from 'react';
 
@@ -12,7 +12,7 @@ function App() {
     <Navbar />
     <Headers />
   </React.Fragment>
-  );
+  )
 
 }
 

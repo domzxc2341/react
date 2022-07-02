@@ -1,4 +1,20 @@
-@import url("./dombg.jpg");
 .Head {
   height: 100vh;
+  width: auto;
+  background-color: black;
+}
+.Head .Img {
+  background: url("./dombg.jpg");
+  justify-content: center;
+  display: flex;
+  left: 10vh;
+  top: 5vh;
+  position: relative;
+  background-repeat: no-repeat;
+  padding: 5vh;
+  height: 50vh;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  opacity: 0.2;
 }/*# sourceMappingURL=Header.css.map */
