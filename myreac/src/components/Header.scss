@@ -1,24 +1,65 @@
-
-
-.Head{
-    height: 100vh;
-    width: auto;
-   background-color: black;
-    
-
-    .Img{
-        background: url('./dombg.jpg');
-       justify-content: center;
-       display: flex;
-       left: 10vh;
-       top: 5vh;
-       position: relative;
-       background-repeat: no-repeat;
-       padding: 5vh;
-        height: 50vh;
-        width: 100%;
-       object-fit: contain;
-        opacity: 0.2;
-    }   
+:root{
+    --headbgcolor: #27282c;
+    --type1color: white;
+    --type1writer: 6s;
 }
 
+
+    
+   
+.Head{
+    height: 100vh;
+    background-color: var(--headbgcolor);
+    place-content: center;
+    text-align: center;
+    display: grid;
+
+    .Img{
+    position: relative;
+    bottom: 20vh;
+    left: 25vh;
+    padding: 3vh;
+    height: 20vh;
+    width: 20vh;
+    object-fit: contain;
+    border-radius: 50%;
+    opacity: 0.5;
+     }   
+}
+.type1{
+    
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-family: Bahnschrift Light;
+    font-weight: 100;
+    position: relative;
+}
+
+.type1::before,
+.type1::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.type1::before{
+    background: #27282c;
+    animation: typewriter var(--type1writer) steps(24) forwards;
+}
+.type1::after{
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--type1writer) steps(24) forwards,
+    blink 500ms steps(24) infinite;
+}
+@keyframes typewriter {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink{
+    to {
+        background: transparent;
+    }
+}
