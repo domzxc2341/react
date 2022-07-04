@@ -1,10 +1,11 @@
 :root{
     --headbgcolor: #27282c;
     --type1color: white;
-    --type1writer: 6s;
+    --type1writer: 10s;
+    --type2writer: 3s;
 }
 
-
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Roboto:wght@500&display=swap');
     
    
 .Head{
@@ -29,9 +30,11 @@
 .type1{
     
     font-size: clamp(1rem, 3vw + 1rem, 4rem);
-    font-family: Bahnschrift Light;
     font-weight: 100;
     position: relative;
+    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: max-content;
 }
 
 .type1::before,
@@ -42,16 +45,21 @@
     left: 0;
     bottom: 0;
     right: 0;
+   
 }
 .type1::before{
     background: #27282c;
-    animation: typewriter var(--type1writer) steps(24) forwards;
+    animation: typewriter var(--type1writer) steps(30) 1s forwards;
 }
 .type1::after{
     width: 0.125em;
-    background: black;
-    animation: typewriter var(--type1writer) steps(24) forwards,
-    blink 500ms steps(24) infinite;
+   
+    animation:invisible 11s forwards, 
+    typewriter var(--type1writer) steps(30) 1s forwards,
+    blink 500ms steps(30) infinite;
+    
+    
+
 }
 @keyframes typewriter {
     to {
@@ -61,5 +69,89 @@
 @keyframes blink{
     to {
         background: transparent;
+    }
+}
+@keyframes invisible{
+    0%{
+        background: black;
+    }
+    25%{
+        background: black;
+    }
+    50%{
+        background: black;
+    }
+    75%{
+        background: black;
+    }
+    100%{
+        background: #27282c;
+    }
+}
+.type2{
+    
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    font-weight: 100;
+    position: relative;
+    font-family: 'Anek Latin', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: max-content;
+    
+}
+.type2::before,
+.type2::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   
+}
+.type2::before{
+    background: #27282c;
+    animation: typewriter2 var(--type2writer) steps(24) 11s forwards;
+}
+.type2::after{
+    width: 0.125em;
+    animation: lines1 13s forwards,
+    typewriter2 var(--type2writer) steps(8) 11s forwards,
+    blink2 500ms steps(8) infinite;
+    
+
+}
+@keyframes typewriter2 {
+    to {
+        left: 100%;
+    }
+}
+@keyframes blink2{
+    to {
+        background: transparent;
+    }
+}
+@keyframes lines1{
+    0%{
+        background: #27282c;
+    }
+    25%{
+        background: #27282c;
+    }
+    50%{
+        background: #27282c;
+    }
+    75%{
+        background: #27282c;
+    }
+    100%{
+        background: black;
+    }
+}
+@keyframes linesinvi{
+    0%{
+        background: black;
+    }
+    100%{
+        background: #27282c;
     }
 }
