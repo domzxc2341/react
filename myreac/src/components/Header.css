@@ -3,7 +3,7 @@
   --headbgcolor: #27282c;
   --type1color: white;
   --type1writer: 10s;
-  --type2writer: 3s;
+  --type2writer: 6s;
 }
 
 .Head {
@@ -15,7 +15,7 @@
 }
 .Head .Img {
   position: relative;
-  bottom: 20vh;
+  bottom: 10vh;
   left: 25vh;
   padding: 3vh;
   height: 20vh;
@@ -55,8 +55,8 @@
 
 .type1::after {
   width: 0.125em;
-  -webkit-animation: invisible 11s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
-          animation: invisible 11s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
+  -webkit-animation: invisible 13s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
+          animation: invisible 13s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
 }
 
 @-webkit-keyframes typewriter {
@@ -143,8 +143,8 @@
 
 .type2::after {
   width: 0.125em;
-  -webkit-animation: lines1 13s forwards, typewriter2 var(--type2writer) steps(8) 11s forwards, blink2 500ms steps(8) infinite;
-          animation: lines1 13s forwards, typewriter2 var(--type2writer) steps(8) 11s forwards, blink2 500ms steps(8) infinite;
+  -webkit-animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(24) 11s forwards, blink2 500ms steps(8) infinite;
+          animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(24) 11s forwards, blink2 500ms steps(8) infinite;
 }
 
 @-webkit-keyframes typewriter2 {
@@ -175,14 +175,17 @@
   25% {
     background: #27282c;
   }
-  50% {
+  55% {
     background: #27282c;
   }
   75% {
-    background: #27282c;
+    background: black;
+  }
+  80% {
+    background: black;
   }
   100% {
-    background: black;
+    background: #27282c;
   }
 }
 @keyframes lines1 {
@@ -192,26 +195,47 @@
   25% {
     background: #27282c;
   }
-  50% {
+  55% {
     background: #27282c;
   }
   75% {
-    background: #27282c;
-  }
-  100% {
     background: black;
   }
-}
-@-webkit-keyframes linesinvi {
-  0% {
+  80% {
     background: black;
   }
   100% {
     background: #27282c;
   }
 }
-@keyframes linesinvi {
+@-webkit-keyframes invisible1 {
   0% {
+    background: black;
+  }
+  25% {
+    background: black;
+  }
+  50% {
+    background: black;
+  }
+  75% {
+    background: black;
+  }
+  100% {
+    background: #27282c;
+  }
+}
+@keyframes invisible1 {
+  0% {
+    background: black;
+  }
+  25% {
+    background: black;
+  }
+  50% {
+    background: black;
+  }
+  75% {
     background: black;
   }
   100% {

@@ -2,7 +2,7 @@
     --headbgcolor: #27282c;
     --type1color: white;
     --type1writer: 10s;
-    --type2writer: 3s;
+    --type2writer: 6s;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Anek+Latin&family=Roboto:wght@500&display=swap');
@@ -17,7 +17,7 @@
 
     .Img{
     position: relative;
-    bottom: 20vh;
+    bottom: 10vh;
     left: 25vh;
     padding: 3vh;
     height: 20vh;
@@ -54,7 +54,7 @@
 .type1::after{
     width: 0.125em;
    
-    animation:invisible 11s forwards, 
+    animation:invisible 13s forwards, 
     typewriter var(--type1writer) steps(30) 1s forwards,
     blink 500ms steps(30) infinite;
     
@@ -114,10 +114,10 @@
 }
 .type2::after{
     width: 0.125em;
-    animation: lines1 13s forwards,
-    typewriter2 var(--type2writer) steps(8) 11s forwards,
+    animation: 
+    lines1 20s forwards,
+    typewriter2 var(--type2writer) steps(24) 11s forwards,
     blink2 500ms steps(8) infinite;
-    
 
 }
 @keyframes typewriter2 {
@@ -137,18 +137,30 @@
     25%{
         background: #27282c;
     }
-    50%{
+    55%{
         background: #27282c;
     }
     75%{
-        background: #27282c;
-    }
-    100%{
         background: black;
     }
+    80%{
+        background: black;
+    }
+    100%{
+        background: #27282c;
+    }
 }
-@keyframes linesinvi{
+@keyframes invisible1{
     0%{
+        background: black;
+    }
+    25%{
+        background: black;
+    }
+    50%{
+        background: black;
+    }
+    75%{
         background: black;
     }
     100%{
