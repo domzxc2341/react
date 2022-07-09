@@ -49,14 +49,14 @@
 }
 .type1::before{
     background: #27282c;
-    animation: typewriter var(--type1writer) steps(30) 1s forwards;
+    animation: typewriter var(--type1writer) steps(32) 1s forwards;
 }
 .type1::after{
     width: 0.125em;
    
     animation:invisible 13s forwards, 
-    typewriter var(--type1writer) steps(30) 1s forwards,
-    blink 500ms steps(30) infinite;
+    typewriter var(--type1writer) steps(32) 1s forwards,
+    blink 500ms steps(32,start)infinite;
     
     
 
@@ -85,7 +85,7 @@
         background: black;
     }
     100%{
-        background: #27282c;
+        background: transparent;
     }
 }
 .type2{
@@ -110,14 +110,14 @@
 }
 .type2::before{
     background: #27282c;
-    animation: typewriter2 var(--type2writer) steps(24) 11s forwards;
+    animation: typewriter2 var(--type2writer) steps(21) 11s forwards;
 }
 .type2::after{
     width: 0.125em;
     animation: 
     lines1 20s forwards,
-    typewriter2 var(--type2writer) steps(24) 11s forwards,
-    blink2 500ms steps(8) infinite;
+    typewriter2 var(--type2writer) steps(21) 11s forwards,
+    blink2 500ms steps(21) infinite;
 
 }
 @keyframes typewriter2 {
@@ -132,13 +132,13 @@
 }
 @keyframes lines1{
     0%{
-        background: #27282c;
+        background: transparent;
     }
     25%{
-        background: #27282c;
+        background: transparent;
     }
     55%{
-        background: #27282c;
+        background: transparent;
     }
     75%{
         background: black;
@@ -147,7 +147,7 @@
         background: black;
     }
     100%{
-        background: #27282c;
+        background: transparent;
     }
 }
 @keyframes invisible1{
@@ -164,6 +164,6 @@
         background: black;
     }
     100%{
-        background: #27282c;
+        background: transparent;
     }
 }

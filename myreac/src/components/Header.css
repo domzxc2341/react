@@ -49,14 +49,14 @@
 
 .type1::before {
   background: #27282c;
-  -webkit-animation: typewriter var(--type1writer) steps(30) 1s forwards;
-          animation: typewriter var(--type1writer) steps(30) 1s forwards;
+  -webkit-animation: typewriter var(--type1writer) steps(32) 1s forwards;
+          animation: typewriter var(--type1writer) steps(32) 1s forwards;
 }
 
 .type1::after {
   width: 0.125em;
-  -webkit-animation: invisible 13s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
-          animation: invisible 13s forwards, typewriter var(--type1writer) steps(30) 1s forwards, blink 500ms steps(30) infinite;
+  -webkit-animation: invisible 13s forwards, typewriter var(--type1writer) steps(32) 1s forwards, blink 500ms steps(32, start) infinite;
+          animation: invisible 13s forwards, typewriter var(--type1writer) steps(32) 1s forwards, blink 500ms steps(32, start) infinite;
 }
 
 @-webkit-keyframes typewriter {
@@ -94,7 +94,7 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }
 @keyframes invisible {
@@ -111,7 +111,7 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }
 .type2 {
@@ -137,14 +137,14 @@
 
 .type2::before {
   background: #27282c;
-  -webkit-animation: typewriter2 var(--type2writer) steps(24) 11s forwards;
-          animation: typewriter2 var(--type2writer) steps(24) 11s forwards;
+  -webkit-animation: typewriter2 var(--type2writer) steps(21) 11s forwards;
+          animation: typewriter2 var(--type2writer) steps(21) 11s forwards;
 }
 
 .type2::after {
   width: 0.125em;
-  -webkit-animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(24) 11s forwards, blink2 500ms steps(8) infinite;
-          animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(24) 11s forwards, blink2 500ms steps(8) infinite;
+  -webkit-animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(21) 11s forwards, blink2 500ms steps(21) infinite;
+          animation: lines1 20s forwards, typewriter2 var(--type2writer) steps(21) 11s forwards, blink2 500ms steps(21) infinite;
 }
 
 @-webkit-keyframes typewriter2 {
@@ -170,13 +170,13 @@
 }
 @-webkit-keyframes lines1 {
   0% {
-    background: #27282c;
+    background: transparent;
   }
   25% {
-    background: #27282c;
+    background: transparent;
   }
   55% {
-    background: #27282c;
+    background: transparent;
   }
   75% {
     background: black;
@@ -185,18 +185,18 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }
 @keyframes lines1 {
   0% {
-    background: #27282c;
+    background: transparent;
   }
   25% {
-    background: #27282c;
+    background: transparent;
   }
   55% {
-    background: #27282c;
+    background: transparent;
   }
   75% {
     background: black;
@@ -205,7 +205,7 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }
 @-webkit-keyframes invisible1 {
@@ -222,7 +222,7 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }
 @keyframes invisible1 {
@@ -239,6 +239,6 @@
     background: black;
   }
   100% {
-    background: #27282c;
+    background: transparent;
   }
 }/*# sourceMappingURL=Header.css.map */
