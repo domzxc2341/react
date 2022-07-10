@@ -241,4 +241,8 @@
   100% {
     background: transparent;
   }
+}
+.new {
+  height: 100vh;
+  background: lightblue;
 }/*# sourceMappingURL=Header.css.map */
